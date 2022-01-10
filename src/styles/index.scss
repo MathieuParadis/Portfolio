@@ -1,7 +1,9 @@
-// import settings
+// BOOTSTRAP STYLES & SETTINGS IMPORTS
+@import "~bootstrap/scss/bootstrap";
 @import './settings';
 
-// import components styles
+// COMPONENTS STYLES IMPORTS
 @import './components/navigation';
 
-// import pages styles
+// PAGES STYLES IMPORTS
+@import './pages/home';
