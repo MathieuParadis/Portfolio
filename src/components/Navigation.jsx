@@ -1,15 +1,18 @@
 // CONFIG IMPORTS
-import React from 'react';
+import React, {  useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
 // BOOTSTRAP COMPONENTS IMPORTS
 import { Button } from 'react-bootstrap';
+import DarkMode from "./context/DarkMode";
 
 // ASSETS IMPORTS
 import logo from '../assets/logos/logo.svg';
 import { logo_dark } from '../assets/logos/logo_dark.svg'
 
-const Navigation = () => {
+const Navigation = ({}) => {
+  const { darkMode, setDarkMode } = useContext(DarkMode);
+
   return (
     <div className="navigation">
       <div>
@@ -23,6 +26,10 @@ const Navigation = () => {
           <NavLink exact to="/contact">Contact</NavLink>
         </div>
         <Button variant="outline-primary">Dark mode</Button>{' '}
+        <div>
+          <input type="checkbox" className="" id="checkbox" checked={darkMode ? true : false} onChange={setDarkMode}/>
+        </div>
+
       </div>
     </div>
   );
