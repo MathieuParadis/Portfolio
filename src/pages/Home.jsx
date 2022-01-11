@@ -19,9 +19,9 @@ const Home = () => {
   return (
     <div className="home">
       <div className="d-flex flex-column-reverse align-items-center flex-lg-row justify-content-lg-between">
-        <div className="presentation">
+        <div className="presentation d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-2 px-lg-0">
           <h1 className="presentation-name">Hello, I am<br></br><strong>Mathieu Paradis</strong></h1>
-          <h3>I’m a frontend developer bla bla bla.</h3>
+          <h3 className="presentation-description">I’m a full stack web developer based between Europe and Asia.</h3>
           <div className="networks">
             <a href="https://github.com/MathieuParadis" target="_blank">
               <img className="social-network-logo" src={darkMode ? gh_logo_dark : gh_logo} alt="Github logo"/>

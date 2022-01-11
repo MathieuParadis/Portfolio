@@ -1,29 +1,58 @@
 .home {
   margin: 30px 45px;
 
+  @include mobile {    
+    margin: 5px;
+  }
+
   .presentation {
     .presentation-name {
       font-size: 3em;
-      line-height: 1.6em;
+      line-height: 1.4em;
+
+      @include mobile {    
+        font-size: 2rem; 
+        line-height: 1.4em;
+      }
 
       strong {
-        font-size: 1.5em;
+        font-size: 1.15em;
+      }
+    }
+
+    .presentation-description {
+      font-size: 1.5rem; 
+      line-height: 1.4em;
+
+      @include mobile {   
+        font-size: 1.3rem;  
+        line-height: 1.2em;
       }
     }
 
     .networks {
+      width: 50%;
       display: flex;
       justify-content: space-between;
-      width: 50%;
       margin-top: 2em;
 
+      @include mobile {    
+        width: 55%;
+      }
+
       .social-network-logo {
+        height: 55px;
         width: 55px;
+
+        @include mobile {    
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }
 
   .illustration {
-    width: 45%;
+    width: 60%;
   }
 }

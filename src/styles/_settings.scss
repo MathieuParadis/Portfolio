@@ -2,6 +2,12 @@
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+// -------------------- SCREEN SIZE VARIABLES -------------------- //
+$phone-viewport:768px;
+$tablet-viewport:992px;
+
+
+
 // -------------------- FONTS VARIABLES -------------------- //
 $font-1: "Poppins", sans-serif;
 
@@ -71,7 +77,13 @@ $footer-color-dark:#7e7e7e;
 }
 
 
+@mixin mobile {
+  @media (max-width: $phone-viewport) { @content; }
+}
 
+@mixin tablet {
+  @media (min-width: $phone-viewport) and (max-width: $tablet-viewport) { @content; }
+}
 
 // *{
 //   font-family: $font-1;
@@ -113,12 +125,15 @@ $footer-color-dark:#7e7e7e;
 
 
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  border: 3px solid var(--prim-color);
+  min-height: 100vh;
 }
 
 body {
