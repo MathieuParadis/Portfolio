@@ -42,11 +42,9 @@
 
       .social-network-logo {
         height: 55px;
-        width: 55px;
 
         @include mobile {    
           height: 30px;
-          width: 30px;
         }
       }
     }

@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 // COMPONENTS IMPORTS
 import DarkMode from "./context/DarkMode";
 import DarkModeBtn from "./DarkModeBtn";
+import HamburgerMenu from './HamburgerMenu';
 
 // ASSETS IMPORTS
 import logo from '../assets/logos/logo.svg';
 import logo_dark from '../assets/logos/logo_dark.svg';
-
 
 const Navigation = () => {
   const { darkMode, setDarkMode } = useContext(DarkMode);
@@ -27,6 +27,7 @@ const Navigation = () => {
           <NavLink exact="true" to="/contact">Contact</NavLink>
         </div>
         <DarkModeBtn />
+        <HamburgerMenu />
       </div>
     </div>
   );
