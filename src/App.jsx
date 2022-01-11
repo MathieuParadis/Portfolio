@@ -41,7 +41,6 @@ const App = () => {
     body.classList.toggle("dark-mode");
     // localStorage.setItem("themePreference", String(!darkMode));
     setDarkMode(!darkMode);
-    alert("dgsgfd")
   };
 
 
