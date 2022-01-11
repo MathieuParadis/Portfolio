@@ -1,21 +1,29 @@
 .home {
   margin: 30px 45px;
-  border: 1px solid black;
 
   .presentation {
     .presentation-name {
       font-size: 3em;
+      line-height: 1.6em;
+
+      strong {
+        font-size: 1.5em;
+      }
     }
 
-    .social-network-logo {
-      width: 55px;
-      margin: 10px;
-      padding: 10px;
+    .networks {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      margin-top: 2em;
+
+      .social-network-logo {
+        width: 55px;
+      }
     }
   }
 
   .illustration {
-    width: 50%;
+    width: 45%;
   }
-
 }

@@ -37,7 +37,7 @@ const App = () => {
   // }, [darkMode]);
 
   const switchMode = () => {
-    const body = document.querySelector("#root");
+    const body = document.querySelector("body");
     body.classList.toggle("dark-mode");
     // localStorage.setItem("themePreference", String(!darkMode));
     setDarkMode(!darkMode);
