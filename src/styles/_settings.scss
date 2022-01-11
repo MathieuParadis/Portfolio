@@ -1,35 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// -------------------- FONTS VARIABLES -------------------- //
 $font-1: "Poppins", sans-serif;
 
-$color-1: #42afaa;
-$color-2: #f7f7f7;
-$color-3: #282c34;
-$color-4: rgb(32, 35, 42);
+// -------------------- COLORS VARIABLES -------------------- //
+$basic-color-white:#ffffff;
+$basic-color-grey: #adb2b8;
+$basic-color-dark:#292929;
+$modal-bg: rgba(0, 0, 0, 0.726);
+$modal-bg-dark: rgba(255, 255, 255, 0.726);
 
-* {
-  box-sizing: border-box;
+// ----- DAY MODE ----- //
+$color-1: #42afaa;
+$transparent-color-1: rgba(64, 175, 170, 0.7);
+$color-2: #000000;
+$transparent-color-2: rgba(0, 0, 0, 0.7);
+$color-3: #ef767a;
+$success: #5DA271;
+$danger: #fb3333;
+$warning: #efbb5b;
+$footer-color:#ebebeb;
+
+
+// ----- NIGHT MODE (DARK) ----- //
+$color-1-dark: #42afaa;
+$transparent-color-1-dark: rgba(64, 175, 170, 0.7);
+$color-2-dark: #ffffff;
+$transparent-color-2-dark: rgba(255, 255, 255, 0.7);
+$color-3-dark: #ef767a;
+$success-dark: #7db58d;
+$danger-dark: #fc5c5c;
+$warning-dark: #f1f173;
+$footer-color-dark:#7e7e7e;
+
+
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+:root{
+  --basic-color-white:#{$basic-color-white};
+  --basic-color-grey:#{$basic-color-grey};
+  --basic-color-dark:#{$basic-color-dark};
+
+  --prim-color:#{$color-1};
+  --transparency-prim-color:#{$transparent-color-1};
+  --sec-color:#{$color-2};
+  --transparency-sec-color: #{$transparent-color-2};
+  --third-color:#{$color-3};
+  --success-color:#{$success};
+  --danger-color:#{$danger};
+  --warning-color:#{$warning};
+  --footer-color:#{$footer-color};
+}
+
+
+.dark-mode{
+  --basic-color-white:#{$basic-color-dark};
+  --basic-color-grey:#{$basic-color-grey};
+  --basic-color-dark:#{$basic-color-white};
+
+  --prim-color:#{$color-1-dark};
+  --transparency-prim-color:#{$transparent-color-1-dark};
+  --sec-color:#{$color-2-dark};
+  --transparency-sec-color: #{$transparent-color-2-dark};
+  --third-color:#{$color-3-dark};
+  --success-color:#{$success-dark};
+  --danger-color:#{$danger-dark};
+  --warning-color:#{$warning-dark};
+  --footer-color:#{$footer-color-dark};
+}
+
+
+
+
+*{
+  font-family: $font-1;
   margin: 0;
   padding: 0;
-}
-body {
-  margin: 30px 45px;
-  max-width: 1296px;
-  font-family: $font-1;
-  color: $color-3;
-  background-color: $color-2;
-}
-
-li {
+  box-sizing: border-box;
   list-style-type: none;
-}
-
-a {
+  outline: none;
+  border: none;
   text-decoration: none;
-  color: $color-3;
-  cursor: pointer;
+
+  a {
+    color: var(--basic-color-white);
+  }
+  a:hover {
+     color: var(--sec-color);
+  }
 }
 
-a:visited {
-  color: $color-3;
+body{
+  background-color: var(--basic-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
+
+
+
+
+
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// body {
+//   margin: 30px 45px;
+//   max-width: 1296px;
+//   font-family: $font-1;
+//   color: $color-3;
+//   background-color: $color-2;
+// }
+
+// li {
+//   list-style-type: none;
+// }
+
+// a {
+//   text-decoration: none;
+//   color: $color-3;
+//   cursor: pointer;
+// }
+
+// a:visited {
+//   color: $color-3;
+// }
