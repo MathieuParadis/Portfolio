@@ -51,6 +51,10 @@
         @include mobile {    
           height: 30px;
         }
+
+        &:hover {
+          transform: scale(1.1)
+        }
       }
     }
   }
