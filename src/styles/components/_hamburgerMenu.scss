@@ -31,7 +31,7 @@
   .span1 {
     top: 0;
     &.clicked{
-      transform: rotate(-45deg) translate(-7px, 7px);
+      transform: rotate(-45deg) translate(-9px, 7px);
       background-color: var(--basic-color-white);
     }
   }
@@ -48,7 +48,6 @@
       &.clicked{
       transform: rotate(45deg) translate(-12px, -10px);
       background-color: var(--basic-color-white);
-
     }
   }
 }
