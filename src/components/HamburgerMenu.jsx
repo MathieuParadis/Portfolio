@@ -1,4 +1,9 @@
+// CONFIG IMPORTS
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+// COMPONENTS IMPORTS
+import DarkModeBtnMobile from "./DarkModeBtnMobile";
 
 const HamburgerMenu = () => {
   const handleMenu = () => {
@@ -14,6 +19,13 @@ const HamburgerMenu = () => {
         <span className="span1"></span>
         <span className="span2"></span>
         <span className="span3"></span>
+      </div>
+      <div className="menu">
+        <NavLink className="menu-link" exact="true" to="/" onClick={handleMenu}>Home</NavLink>
+        <NavLink className="menu-link" exact="true" to="/portfolio" onClick={handleMenu}>Portfolio</NavLink>
+        <NavLink className="menu-link" exact="true" to="/resume" onClick={handleMenu}>Resume</NavLink>
+        <NavLink className="menu-link" exact="true" to="/contact" onClick={handleMenu}>Contact</NavLink>
+        <DarkModeBtnMobile />      
       </div>
     </div>
   );
