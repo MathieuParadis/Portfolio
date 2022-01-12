@@ -34,7 +34,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="illustration">
+        <div className="illustration mb-3 mb-lg-0">
           <img src={koala} alt="Koala drawing" />
         </div>
       </div>
