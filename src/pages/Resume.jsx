@@ -3,8 +3,10 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div>
-      This is the resume page
+    <div className="resume">
+      <div className="page">
+        This is the resume page
+      </div>
     </div>
   );
 };

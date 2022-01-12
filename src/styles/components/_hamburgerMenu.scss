@@ -8,7 +8,7 @@
   display: none;
   z-index: 11;
 
-  @include mobile {
+  @include mobile_and_tablet {
     position: absolute;
     height: 32px;
     width: 30px;
@@ -18,11 +18,6 @@
     display: block;
     z-index: 11;  
   }
-
-  @include tablet {
-    display: block;
-  }
-
 
   .span1, .span2, .span3 {
     position: absolute;
