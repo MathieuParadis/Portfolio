@@ -17,11 +17,7 @@
     display: flex;
     align-items: center;
 
-    @include mobile {
-      display: none;
-    }
-  
-    @include tablet {
+    @include mobile_and_tablet {
       display: none;
     }
 
@@ -61,24 +57,6 @@
         bottom: 1px;
         left: 50%;
       }
-    }
-  }
-
-
-  input[type=checkbox] {
-    display: none;
-  }
-
-  input[type=checkbox] + label, input[type=checkbox]:checked + label {
-    width: 28px;
-    display: inline-block;
-
-    @include mobile {
-      display: none;
-    }
-  
-    @include tablet {
-      display: none;
     }
   }
 }

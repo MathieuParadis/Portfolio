@@ -7,7 +7,6 @@ $phone-viewport:768px;
 $tablet-viewport:992px;
 
 
-
 // -------------------- FONTS VARIABLES -------------------- //
 $font-1: "Poppins", sans-serif;
 
@@ -83,6 +82,10 @@ $footer-color-dark:#7e7e7e;
 
 @mixin tablet {
   @media (min-width: $phone-viewport) and (max-width: $tablet-viewport) { @content; }
+}
+
+@mixin mobile_and_tablet {
+  @media (max-width: $tablet-viewport) { @content; }
 }
 
 // *{
