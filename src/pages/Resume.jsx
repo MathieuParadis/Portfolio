@@ -5,6 +5,7 @@ import React from 'react';
 import CodingLanguagesSection from '../components/CodingLanguagesSection';
 import DesignToolsSection from '../components/DesignToolsSection';
 import ContactSection from '../components/ContactSection';
+import SpokenLanguagesSection from '../components/SpokenLanguagesSection';
 
 const Resume = () => {
   return (
@@ -23,6 +24,7 @@ const Resume = () => {
               <CodingLanguagesSection />
               <DesignToolsSection />
               <ContactSection />
+              <SpokenLanguagesSection />
             </div>
           </div>
         </div>
