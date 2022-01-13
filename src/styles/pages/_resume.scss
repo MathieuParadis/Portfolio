@@ -31,5 +31,54 @@
       margin-right: 45px;
       padding: 20px;
     }
+
+
+    .content {
+      .head {
+        margin-bottom: 3em;
+
+        h1 {
+          font-size: 3em;
+
+          @include mobile {    
+            font-size: 2rem; 
+            text-align: center;
+          }
+        }
+
+        p {
+          margin-top: 2em;
+          font-size: 1.3rem; 
+          text-align: justify;
+    
+          @include mobile {   
+            font-size: 1.1rem;  
+          }
+        }
+
+
+
+
+
+
+      }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
   }
 }
