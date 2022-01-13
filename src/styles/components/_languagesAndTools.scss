@@ -1,15 +1,15 @@
-.coding-language-section {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.languages-tools-section {
+  margin-bottom: 3em;
+
+
   
   h3 {
     font-size: 1.3em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-weight: bold;
 
-    @include mobile {  
-      font-size: 1.1em;  
-      text-align: center;
+    @include mobile {    
+      margin-bottom: 0.4em;
     }
   }
 
@@ -18,7 +18,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .coding-language-box {
+    .language-tool-box {
       display: flex;
       align-items: center;
       width: 50%;
@@ -27,13 +27,17 @@
       
       p {
         margin: 0px;
-        padding-left: 15px;
+        padding-left: 8px;
       }
     }
   
-    .coding-language-logo {
-      height: 55px;
+    .language-tool-logo {
+      height: 50px;
   
+      @include mobile {    
+        height: 35px;
+      }
+
       @include mobile {    
         height: 45px;
       }

@@ -22,31 +22,31 @@ const CodingLanguageSection = () => {
   const { darkMode, setDarkMode } = useContext(DarkMode);
 
   return (
-    <div className="coding-language-section">
+    <div className="languages-tools-section">
       <h3>CODING LANGUAGES</h3>
       <div className="content">
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? html_dark : html} alt="HTML5 logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? html_dark : html} alt="HTML5 logo" />
           <p>HTML 5</p>
         </div>
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? css_dark : css} alt="CSS3 logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? css_dark : css} alt="CSS3 logo" />
           <p>CSS 3</p>
         </div>
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? js_dark : js} alt="JS logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? js_dark : js} alt="JS logo" />
           <p>JavaScript</p>
         </div>
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? react_dark : react} alt="React logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? react_dark : react} alt="React logo" />
           <p>React JS</p>
         </div>
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? ruby_dark : ruby} alt="Ruby logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? ruby_dark : ruby} alt="Ruby logo" />
           <p>Ruby</p>
         </div>
-        <div className="coding-language-box">
-          <img className="coding-language-logo" src={darkMode ? rails_dark : rails} alt="Ruby on Rails logo" />
+        <div className="language-tool-box">
+          <img className="language-tool-logo" src={darkMode ? rails_dark : rails} alt="Ruby on Rails logo" />
           <p>Rails</p>
         </div>
       </div>

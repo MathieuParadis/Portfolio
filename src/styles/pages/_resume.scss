@@ -14,9 +14,9 @@
     background-color: var(--basic-color-white);
     border-radius: 4px;
     height: 1500px;
-    margin-left: 110px;
-    margin-right: 110px;
-    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 40px;
 
     @include mobile {
       margin-top: -10px;   
@@ -35,19 +35,18 @@
 
     .content {
       .head {
-        margin-bottom: 3em;
+        margin-bottom: 2em;
 
         h1 {
           font-size: 3em;
 
           @include mobile {    
-            font-size: 2rem; 
-            text-align: center;
+            font-size: 1.5rem; 
           }
         }
 
         p {
-          margin-top: 2em;
+          margin-top: 1em;
           font-size: 1.3rem; 
           text-align: justify;
     
@@ -55,30 +54,19 @@
             font-size: 1.1rem;  
           }
         }
-
-
-
-
-
-
       }
 
+      // .body {
+      //   height: 100%; 
 
+      //   .first-section, .second-section {
+      //   }
+      // }
 
 
 
 
 
     }
-
-
-
-
-
-
-
-
-
-
   }
 }
