@@ -11,6 +11,7 @@ const HamburgerMenu = () => {
     document.querySelector(".span2").classList.toggle("clicked");
     document.querySelector(".span3").classList.toggle("clicked");
     document.querySelector(".menu").classList.toggle("clicked");
+    document.querySelector("body").classList.toggle("clicked");
   };
 
   return (

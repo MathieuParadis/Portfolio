@@ -90,3 +90,10 @@
     }
   }
 }
+
+body {
+  &.clicked {
+    height: 100%;
+    overflow: hidden;
+  }
+}
