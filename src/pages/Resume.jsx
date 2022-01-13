@@ -4,6 +4,7 @@ import React from 'react';
 // COMPONENTS IMPORTS
 import CodingLanguagesSection from '../components/CodingLanguagesSection';
 import DesignToolsSection from '../components/DesignToolsSection';
+import ContactSection from '../components/ContactSection';
 
 const Resume = () => {
   return (
@@ -21,6 +22,7 @@ const Resume = () => {
             <div className="second-section d-flex flex-column h-100 w-100 w-lg-50">
               <CodingLanguagesSection />
               <DesignToolsSection />
+              <ContactSection />
             </div>
           </div>
         </div>
