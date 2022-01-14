@@ -3,9 +3,11 @@ import React from 'react';
 
 // COMPONENTS IMPORTS
 import CodingLanguagesSection from '../components/CodingLanguagesSection';
-import DesignToolsSection from '../components/DesignToolsSection';
 import ContactSection from '../components/ContactSection';
+import DesignToolsSection from '../components/DesignToolsSection';
+import EducationSection from '../components/EducationSection';
 import SpokenLanguagesSection from '../components/SpokenLanguagesSection';
+import WorkSection from '../components/WorkSection';
 
 const Resume = () => {
   return (
@@ -18,7 +20,8 @@ const Resume = () => {
           </div>
           <div className="body d-flex flex-column flex-lg-row">
             <div className="first-section w-100 w-lg-50">
-              dummy text
+              <WorkSection />
+              <EducationSection />
             </div>
             <div className="second-section d-flex flex-column h-100 w-100 w-lg-50">
               <CodingLanguagesSection />
