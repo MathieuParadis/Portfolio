@@ -51,10 +51,10 @@ const App = () => {
         <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
           <Navigation />
           <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/portfolio" exact element={<Portfolio />} />
-            <Route path="/resume" exact element={<Resume />} />
-            <Route path="/contact" exact element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" exact="true" element={<Portfolio />} />
+            <Route path="/resume" exact="true" element={<Resume />} />
+            <Route path="/contact" exact="true" element={<Contact />} />
           </Routes>
         </DarkMode.Provider>
       </Router>

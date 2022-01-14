@@ -23,7 +23,7 @@ const CodingLanguageSection = () => {
 
   return (
     <div className="languages-tools-section">
-      <h3>CODING LANGUAGES</h3>
+      <h3>PROGRAMMING LANGUAGES</h3>
       <div className="content">
         <div className="language-tool-box">
           <img className="language-tool-logo" src={darkMode ? html_dark : html} alt="HTML5 logo" />
