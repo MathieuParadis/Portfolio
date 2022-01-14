@@ -1,14 +1,18 @@
 .navigation {
   margin: -20px -45px;
-  padding: 27px 50px;
+  padding: 30px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  @include mobile_and_tablet {
-    padding: 30px 40px;   
+  @include mobile {
+    padding: 30px 20px;   
   }
 
+  @include tablet {
+    padding: 30px 40px;   
+  }
+  
   .logo {
     width: 60px;
   }
@@ -16,6 +20,7 @@
   .nav-links {
     display: flex;
     align-items: center;
+    height: 50px;
 
     @include mobile_and_tablet {
       display: none;

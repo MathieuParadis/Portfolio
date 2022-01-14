@@ -46,17 +46,19 @@ const App = () => {
 
 
   return (
-    <Router>
-      <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
-        <Navigation />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/portfolio" exact element={<Portfolio />} />
-          <Route path="/resume" exact element={<Resume />} />
-          <Route path="/contact" exact element={<Contact />} />
-        </Routes>
-      </DarkMode.Provider>
-    </Router>
+    <div>
+      <Router>
+        <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
+          <Navigation />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/portfolio" exact element={<Portfolio />} />
+            <Route path="/resume" exact element={<Resume />} />
+            <Route path="/contact" exact element={<Contact />} />
+          </Routes>
+        </DarkMode.Provider>
+      </Router>
+    </div>
   );
 }
 
