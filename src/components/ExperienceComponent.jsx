@@ -4,7 +4,7 @@ const ExperienceComponent = ({title, location, date, description}) => {
   return (
     <div className="experience-component">
       <h4 className="title">{title}</h4>
-      <div>
+      <div className="location-date">
         <h5 className="location">{location}</h5> |
         <h6 className="date">{date}</h6>
       </div>
