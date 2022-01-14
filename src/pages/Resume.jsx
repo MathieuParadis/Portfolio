@@ -23,8 +23,8 @@ const Resume = () => {
             <div className="second-section d-flex flex-column h-100 w-100 w-lg-50">
               <CodingLanguagesSection />
               <DesignToolsSection />
-              <ContactSection />
               <SpokenLanguagesSection />
+              <ContactSection />
             </div>
           </div>
         </div>

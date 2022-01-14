@@ -12,6 +12,7 @@
   }
 
   .content {
+    padding-top: 1em;
 
     .language-box {
       display: flex;
@@ -22,21 +23,29 @@
       p {
         margin: 0px;
         padding-right: 10px;
-        min-width: 40%;
+        width: 35%;
+
+        @include mobile {
+          width: 35%;
+        }
+
+        @include tablet {
+          width: 20%;
+        }
       }
 
       .language-rating {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 50%;
+        width: 55%;
 
         @include mobile {
-          width: 60%;
+          width: 55%;
         }
 
         @include tablet {
-          width: 60%;
+          width: 40%;
         }
 
         .language-circle {
