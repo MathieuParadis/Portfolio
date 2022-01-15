@@ -1,16 +1,11 @@
 // CONFIG IMPORTS
-import React, {  useContext } from 'react';
-
-// COMPONENTS IMPORTS
-import DarkMode from "./context/DarkMode";
+import React from 'react';
 
 // ASSETS IMPORTS
 import circle from '../assets/logos/circle.svg';
 import circle_outline from '../assets/logos/circle_outline.svg';
 
 const CodingLanguageSection = () => {
-  const { darkMode, setDarkMode } = useContext(DarkMode);
-
   return (
     <div className="spoken-languages-section">
       <h3>LANGUAGES</h3>
