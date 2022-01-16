@@ -21,11 +21,14 @@
       flex-direction: column;
     }
 
+    .card-left, .card-right {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .card-left {
       width: 40%;
       padding-top: 6em;
-      padding-left: 20px;
-      padding-right: 30px;
       background-color: var(--darker-prim-color);
 
       @include mobile_and_tablet {
@@ -83,9 +86,7 @@
     }
 
     .card-right {
-      // width: 60%;
-      padding-left: 30px;
-      padding-right: 20px;
+      width: 60%;
       display: flex;
       
       @include mobile_and_tablet {

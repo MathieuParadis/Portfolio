@@ -1,28 +1,28 @@
-// .contact-form {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   width: 100%;
-
-// }
-
-
-.form-content {
+.contact-form {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+
+
+  .form-content {
+    input, textarea {
+      width: 100%;
+      padding: 5px 15px;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      border: 1px solid black;
+      border-radius: 25px;
+
+      &:focus {
+        border: 1px solid var(--prim-color);
+      }
+    }
+  }
 }
 
-input, textarea {
-  font-size: 1em;
-  border-bottom: 1px solid yellow;
-  width: 100%;
-}
-input {
-  padding: 24px 0 12px;
-  width: 100%;
-}
+
 .email-content {
   position: relative;
   border-bottom: 1px solid yellow;
@@ -71,10 +71,6 @@ input {
   }
 }
 
-textarea {
-  resize: none;
-  padding: 24px 0;
-}
 
 .error::placeholder {
   color: red;
@@ -90,3 +86,4 @@ textarea {
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }
+

@@ -103,52 +103,16 @@ const ContactForm = () => {
   return (
     <form className="contact-form">
       <div className="form-content">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          value={name}
-        />
+        <input type="text" id="name" name="name" required value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
         <div className="email-content">
           <label id="not-mail">Email non valide</label>
-          <input
-            type="mail"
-            id="email"
-            name="email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="email *"
-            value={email}
-          />
+          <input type="mail" id="email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
         </div>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          required
-          onChange={(e) => setSubject(e.target.value)}
-          placeholder="subject"
-          value={subject}
-        />
-        <textarea
-          id="message"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
-          value={message}
-          required
-        />
+        <input type="text" id="subject" name="subject" required value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" />
+        <textarea id="message" name="message" required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" rows="7" />
       </div>
       <div className="formMessage"></div>
-      <input
-        className="formButton hover"
-        type="submit"
-        value="envoyer"
-        onClick={(e) => handleSubmit(e)}
-      />
+      <input className="formButton" type="submit" value="envoyer" onClick={(e) => handleSubmit(e)} />
     </form>
   );
 };
