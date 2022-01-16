@@ -17,6 +17,7 @@ const ContactForm = () => {
     let emailInput = document.getElementById("email");
     let subjectInput = document.getElementById("subject");
     let messageInput = document.getElementById("message");
+    let inputs = [nameInput, emailInput, subjectInput, messageInput];
     let formMessage = document.querySelector(".formMessage");
 
     const isEmailCorrect = () => {
@@ -90,6 +91,9 @@ const ContactForm = () => {
       if (!email) {
         emailInput.classList.add("error");
       }
+      if (!subject) {
+        subjectInput.classList.add("error");
+      }
       if (!message) {
         messageInput.classList.add("error");
       }
@@ -98,7 +102,6 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <h3>Get in touch</h3>
       <div className="form-content">
         <input
           type="text"

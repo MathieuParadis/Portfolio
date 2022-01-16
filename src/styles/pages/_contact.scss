@@ -1,0 +1,99 @@
+.contact{
+  margin: 30px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {    
+    margin: 30px 10px;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    align-items: stretch;
+    border: 1px solid var(--basic-color-dark);
+    min-height: 70vh;
+    min-width: 70vw;
+
+    @include mobile_and_tablet {
+      flex-direction: column;
+    }
+
+    .card-left {
+      width: 40%;
+      padding-top: 6em;
+      padding-left: 20px;
+      padding-right: 30px;
+      background-color: var(--darker-prim-color);
+
+      @include mobile_and_tablet {
+        width: 100%;
+        padding: 0px;
+        background-color: transparent;
+        margin-bottom: 2em;
+      }
+
+      h1 {
+        font-size: 3em;
+    
+        @include mobile {    
+          font-size: 2rem; 
+          text-align: center;
+        }
+
+        @include tablet {    
+          text-align: center;
+        }
+      }
+
+      p {
+        margin-top: 1em;
+        font-size: 1.3rem; 
+        text-align: justify;
+  
+        @include mobile_and_tablet {   
+          font-size: 1.1rem; 
+          text-align: center; 
+        }
+      }
+
+      .contact-means {
+        display: flex;
+        margin-top: 1em;
+
+        @include mobile_and_tablet {    
+          margin: 0;
+          justify-content: center;
+        }
+
+        .contact-logo {
+          height: 40px;
+  
+          @include mobile {    
+            height: 30px;
+          }
+  
+          &:hover {
+            transform: scale(1.1)
+          }
+        }
+      }
+    }
+
+    .card-right {
+      // width: 60%;
+      padding-left: 30px;
+      padding-right: 20px;
+      display: flex;
+      
+      @include mobile_and_tablet {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+
