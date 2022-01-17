@@ -5,6 +5,9 @@
   justify-content: center;
   width: 100%;
 
+  @include mobile_and_tablet {
+    align-items: center;
+  }
 
   .form-content {
     input, textarea {
@@ -22,6 +25,22 @@
         box-shadow: 0 0 15px var(--prim-color);
       }
     }
+  }
+
+
+
+
+
+
+  .form-button {
+    width: 150px;
+    padding: 5px 15px;
+    margin-top: 1em;
+    font-size: 1.1em;
+    background-color: var(--lighter-prim-color);
+    color: var(--basic-color-dark);
+    border: none;
+    border-radius: 25px;
   }
 }
 

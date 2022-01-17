@@ -112,7 +112,7 @@ const ContactForm = () => {
         <textarea id="message" name="message" required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" rows="7" />
       </div>
       <div className="formMessage"></div>
-      <input className="formButton" type="submit" value="envoyer" onClick={(e) => handleSubmit(e)} />
+      <input className="form-button" type="submit" value="Send" onClick={(e) => handleSubmit(e)} />
     </form>
   );
 };

@@ -41,7 +41,7 @@
     .card-left {
       width: 40%;
       padding-top: 6em;
-      background-color: var(--darker-prim-color);
+      background-color: var(--lighter-prim-color);
 
       @include mobile_and_tablet {
         width: 100%;
