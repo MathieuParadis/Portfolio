@@ -16,17 +16,22 @@
       border-radius: 25px;
 
       &:focus {
-        border: 1px solid var(--prim-color);
+        border: none;
+        outline: none;
+        border-color: var(--prim-color);
+        box-shadow: 0 0 15px var(--prim-color);
       }
     }
   }
 }
 
 
-.email-content {
-  position: relative;
-  border-bottom: 1px solid yellow;
-}
+
+// .email-content {
+//   position: relative;
+//   border-bottom: 1px solid yellow;
+// }
+
 #not-mail {
   display: none;
   position: absolute;
