@@ -12,20 +12,14 @@ const WorkSection = () => {
         <ExperienceComponent 
           title="Project Manager" 
           location="Meiyume" 
-          date="Aug. 2019 - Jul. 2020 " 
-          description="desfdgnfdln gnfdlnhkldfn fdh fd" 
-        />
-        <ExperienceComponent 
-          title="Quality Engineer" 
-          location="Meiyume" 
-          date="Aug. 2017 - Jul. 2019 " 
-          description="desfdgnfdln gnfdlnhkldfn fdh fd" 
+          date="Aug. 2017 - Jul. 2020 " 
+          description="Handled merchandising duties from quotation, schedule, sampling development, and mass production till shipment. Managed project progress, analyzed risks, coordinated the different parties and adapted resources as required." 
         />
         <ExperienceComponent 
           title="Supplier Quality Engineer" 
           location="Telenco" 
           date="Nov. 2015 - Jun. 2017 " 
-          description="desfdgnfdln gnfdlnhkldfn fdh fd" 
+          description="Visit and quality control of Asian suppliers. Analysis of non-compliance and development of corrective and preventive actions. Sourcing and development of existing suppliers through audit."
         />
       </div>
     </div>

@@ -13,7 +13,7 @@ const EducationSection = () => {
           title="Bachelor's degree in web development" 
           location="OpenClassrooms" 
           date="Nov. 2021 - Present" 
-          description="Use of front-end libraries and frameworks such as Bootstrap, and ReactJS. Building of sites backend in Ruby, Run SQL queries on databases." 
+          description="Use of front-end libraries and frameworks such as Bootstrap, and ReactJS. Building of sites backend in Ruby. Run SQL queries on databases." 
         />
         <ExperienceComponent 
           title="Web development - Full stack training course" 
