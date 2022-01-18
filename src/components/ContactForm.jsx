@@ -84,7 +84,7 @@ const ContactForm = () => {
         return false;
       }
     };
-    
+
     const areFieldsfilled = () => {
       if (isNameFilled() && isEmailCorrect() && isSubjectFilled() && isMessageFilled()) {
         return true
@@ -94,21 +94,20 @@ const ContactForm = () => {
     }
 
     if (areFieldsfilled()) {
-      nameInput.classList.remove("red");
-      emailInput.classList.remove("red");
-      subjectInput.classList.remove("red");
-      messageInput.classList.remove("red");
-
-      formNotification.innerText = "Message en cours d'envoi...";
-      formNotification.style.background = "#00c1ec";
-      formNotification.style.opacity = "1";
+      formNotification.classList.remove("empty-field");
+      formNotification.classList.remove("sent");
+      formNotification.classList.remove("http-error");
+      formNotification.classList.add("sending");
 
       // see doc : https://www.emailjs.com/docs/examples/reactjs/
       // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID')
         emailjs.sendForm("contact_service", "contact_service", form, USER_ID)
         .then((result) => {
             console.log(result.text);
-            formNotification.innerHTML = "Your message was sent successfully";
+            formNotification.classList.remove("empty-field");
+            formNotification.classList.remove("sending");
+            formNotification.classList.remove("http-error");
+            formNotification.classList.add("sent");
 
             inputs.map(input => input.classList.remove("error"));
             setName("");
@@ -117,18 +116,18 @@ const ContactForm = () => {
             setMessage("");
 
             setTimeout(() => {
-              formNotification.style.opacity = "0";
+              formNotification.classList.remove("sent");
             }, 5000);
         }, (error) => {
             console.log(error.text);
-            formNotification.style.background = "rgb(253, 87, 87)";
-            formNotification.innerHTML = "An error occured. Please try again!";
+            formNotification.classList.remove("empty-field");
+            formNotification.classList.remove("sending");
+            formNotification.classList.remove("sent");
+            formNotification.classList.add("http-error");
         });
 
     } else {
-      formNotification.innerHTML = "Merci de remplir correctement les champs requis *";
-      formNotification.style.background = "rgb(253, 87, 87)";
-      formNotification.style.opacity = "1";
+      formNotification.classList.add("empty-field");
 
       if (!name) {
         nameInput.classList.add("error");

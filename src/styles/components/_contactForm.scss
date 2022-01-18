@@ -25,12 +25,11 @@
         box-shadow: 0 0 15px var(--prim-color);
       }
     }
+
+    .error::placeholder {
+      color: var(--danger-color);
+    }
   }
-
-
-
-
-
 
   .name-content, .email-content, .subject-content, .message-content {
     position: relative;
@@ -90,19 +89,62 @@
     border-radius: 4px;
     box-shadow: 0 0 2px var(----shadow-color1);
   }
+  
+  .empty-field {
+    background-color: var(--danger-bg-color);
+    color: var(--danger-color);
+    opacity: 1;
+  
+    &::after {
+      content: "Please fill in all the fields";
+    }
+  }
+
+  .sending {
+    background-color: var(--warning-bg-color);
+    color: var(--warning-color);
+    opacity: 1;
+  
+    &::after {
+      content: "Sending...";
+    }
+  }
+
+  .sent {
+    background-color: var(--success-bg-color);
+    color: var(--success-color);
+    opacity: 1;
+  
+    &::after {
+      content: "Your message was sent successfully";
+    }
+  }
+
+  .http-error {
+    background-color: var(--danger-bg-color);
+    color: var(--danger-color);
+    opacity: 1;
+  
+    &::after {
+      content: "An error occured. Please try again!";
+    }
+  }
 
   .form-button {
     width: 150px;
     padding: 5px 15px;
     margin-top: 1em;
     font-size: 1.1em;
-    background-color: var(--lighter-prim-color);
+    background-color: var(--basic-color-light);
     color: var(--basic-color-dark);
-    border: none;
+    border: 1px solid var(--prim-color);
     border-radius: 25px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
-.error::placeholder {
-  color: var(--danger-color);
-}
+
+
