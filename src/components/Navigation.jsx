@@ -14,14 +14,14 @@ import logo_dark from '../assets/logos/logo_dark.svg';
 const Navigation = () => {
   const { darkMode, setDarkMode } = useContext(DarkMode);
   const location = useLocation();
-  const history = useNavigate()
+  const navigate = useNavigate()
 
   const refreshPage = () => {
     
     if (location.pathname === '/') {
       window.location.reload();
     } else {
-      history.push("/");
+      navigate("/");
     }
   }
 
