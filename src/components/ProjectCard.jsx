@@ -8,7 +8,6 @@ const ProjectCard = ({project, setOpenModal}) => {
           <img src={project.img} alt={project.title + " illustration"} />
         </div>
         <div className="flip-card-back">
-          <h5>{project.title}</h5>
           <button onClick={() => setOpenModal(project)}>View project</button>
         </div>
       </div>

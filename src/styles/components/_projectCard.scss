@@ -35,16 +35,15 @@
     }
 
     .flip-card-back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: var(--basic-color-white);
       color: var(--basic-color-dark);
       padding: 10px;
       transform: rotateY(180deg);
 
       button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);   
         width: 150px;   
         border: none;
         border-radius: 40px;
