@@ -10,7 +10,7 @@ const ProjectCard = (project) => {
         </div>
         <div className="flip-card-back">
           <h5>{title}</h5>
-          <button>See more</button>
+          <button>View project</button>
         </div>
       </div>
     </div>
