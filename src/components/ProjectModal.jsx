@@ -17,7 +17,15 @@ const ProjectModal = ({project}) => {
     <div className="project-modal">
       <div className="project-modal-overlay"></div>
       <div className="project-modal-content">
-        {project && (project.title)}
+        {project && (
+          <>
+            <h1 className="m-0">{project.title}</h1>
+            <img src={project.img} alt={project.title + " illustration"} />
+            <p>{project.description}</p>
+            <p>Stack: {project.stack}</p>
+            <a href={project.url} target="_blank" className="project-link">Visit website</a>
+          </>
+        )}
       </div>
     </div>
   );
