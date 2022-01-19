@@ -1,5 +1,5 @@
 // CONFIG IMPORTS
-import React from 'react';
+import React, {useState} from 'react';
 
 // COMPONENTS IMPORTS
 import ProjectCard from '../components/ProjectCard';
@@ -9,17 +9,27 @@ import ProjectModal from '../components/ProjectModal';
 import projects from '../data/Projects';
 
 const Portfolio = () => {
+  const [currentProject, setCurrentProject] = useState(null);
+
+  const openModal = (project) => {
+    setCurrentProject(project);
+    let modal = document.querySelector(".project-modal");
+    modal.style.visibility = 'visible';
+  }
+
   return (
     <div className="portfolio">
       <h1 className="ps-2">Recent projects</h1>
       <div className="projects">
-        <ProjectCard img={projects[0].img} title={projects[0].title}/>
-        <ProjectCard img={projects[1].img} title={projects[1].title}/>
-        <ProjectCard img={projects[2].img} title={projects[2].title}/>
-        <ProjectCard img={projects[3].img} title={projects[3].title}/>
-        <ProjectCard img={projects[4].img} title={projects[4].title}/>
+        {
+          projects.map((project) => {
+            return (
+              <ProjectCard project={project} setOpenModal={openModal} key={project.title}/>
+            )
+          })
+        }
       </div>
-      {/* <ProjectModal /> */}
+      <ProjectModal project={currentProject}/>
     </div>
   );
 };
