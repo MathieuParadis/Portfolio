@@ -11,7 +11,7 @@ import projects from '../data/Projects';
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <h1>Recent projects</h1>
+      <h1 className="ps-2">Recent projects</h1>
       <div className="projects">
         <ProjectCard img={projects[0].img} title={projects[0].title}/>
         <ProjectCard img={projects[1].img} title={projects[1].title}/>
