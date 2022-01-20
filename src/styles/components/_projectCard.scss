@@ -50,6 +50,10 @@
         padding: 10px;
         background-color: var(--third-color);
         color: var(--basic-color-dark);
+
+        &:hover {
+          background-color: var(--darker-third-color);
+        }
       }
     }
 

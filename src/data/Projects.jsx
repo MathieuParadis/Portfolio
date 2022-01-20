@@ -17,28 +17,28 @@ const projects = [
     title: "FollowNut'", 
     img: follownut_screenshot,
     url: "https://follownut.herokuapp.com/",
-    stack: "React",
+    stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
     description: "description"
   },
   {
     title: "THP immo'", 
     img: thp_immo_screenshot,
     url: "https://thp-renting.herokuapp.com/",
-    stack: "React",
+    stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
     description: "description"
   },
   {
     title: "Feedtruck", 
     img: feedtruck_screenshot,
     url: "https://feedtruck.herokuapp.com/",
-    stack: "Rails",
+    stack: "JavaScript, Ruby, Ruby on Rails, PostgreSQL",
     description: "description"
   },
   {
     title: "The Gossip Project", 
     img: gossip_project_screenshot,
     url: "https://gossip-project-mat-edition.herokuapp.com/",
-    stack: "Rails",
+    stack: "Ruby, Ruby on Rails, PostgreSQL",
     description: "description"
   },
 ];
