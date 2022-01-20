@@ -11,35 +11,35 @@ const projects = [
     img: chalet_and_caviar_screenshot,
     url: "https://live-chaletsandcaviaraspenagency.pantheonsite.io/",
     stack: "Wordpress",
-    description: "description"
+    description: "Chalet and Caviar is an agency proposing luxury chalets for rent and for sales."
   },
   {
     title: "FollowNut'", 
     img: follownut_screenshot,
     url: "https://follownut.herokuapp.com/",
     stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
-    description: "description"
+    description: "FollowNut' is a follow up application for nutritionists and their patients."
   },
   {
     title: "THP immo'", 
     img: thp_immo_screenshot,
     url: "https://thp-renting.herokuapp.com/",
     stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
-    description: "description"
+    description: "THPimmo is a platform that proposes atypical houses to rent to spend your vacations."
   },
   {
     title: "Feedtruck", 
     img: feedtruck_screenshot,
     url: "https://feedtruck.herokuapp.com/",
     stack: "JavaScript, Ruby, Ruby on Rails, PostgreSQL",
-    description: "description"
+    description: "Feedtruck is an application that connects individuals with foodtrucks around their homes in Paris."
   },
   {
     title: "The Gossip Project", 
     img: gossip_project_screenshot,
     url: "https://gossip-project-mat-edition.herokuapp.com/",
     stack: "Ruby, Ruby on Rails, PostgreSQL",
-    description: "description"
+    description: "The Gossip Project is a service displaying gossips posted by its users."
   },
 ];
 
